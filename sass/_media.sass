@@ -1,0 +1,394 @@
+@media (max-width: 1200px)
+	.promo 
+		height: 560px
+
+		&_text 
+			margin-top: 146px
+
+	.desc_1 
+		height: 633px
+		.link_down 
+			a 
+			 top: 88%
+		
+		&_under_title
+			font-size: 16px
+
+		&_title
+			font-size: 20px
+			text-transform: uppercase
+		&_list_1
+			font-size: 16px
+	.desc_2 
+		height: 602px
+
+		&_text_2
+			margin-top: 100px
+
+
+	.gallery
+		height: 632px
+		.slick-slider
+			.slick-prev
+				transform: translateX(-5vw)
+			.slick-next
+				transform: translateX(5vw)
+			.slick-prev, .slick-next
+				top: 40%
+			.slick-slide 
+				img
+					height: 410px
+
+		&_menu
+			height: 88%
+
+// 	.cost
+// 		.col-lg-4
+// 			max-width: 28%		
+					
+// 		&_hero 
+// 			&_title
+// 				font-size: 22px
+
+			
+@media (max-width: 991px)
+	header 
+		.menu
+			width: 420px
+			margin-left: 150px
+			li 
+				padding: 7px 10px
+				a 
+					font-size: 12px	
+					letter-spacing: 0
+
+		.row
+			.header_phone_link
+				font-size: 18px
+				top: 55px
+
+	.promo 
+		height: 498px
+		padding-top: 35px 
+
+		&_title
+			font-size: 40px
+
+		&_subtitle
+			font-size: 20px
+			margin-top: 10px
+
+		&_text 
+			font-size: 14px
+			margin-top: 190px
+
+	.gallery 
+		.slick-slider			
+			.slick-slide 
+				img
+					height: 410px
+				
+	footer 
+		.foot_menu
+			.links
+				.point
+					font-size: 12px
+
+		// .foot_icons 
+
+		// 	div 
+		// 		display: flex
+		// 		justify-content: center
+		// 		align-items: center
+		// 	img
+		// 		width: 50px	
+// 			.dots 
+// 				li 
+// 					width: 7px
+
+	.
+
+		
+
+@media (max-width: 767px)
+	header 
+		height: 120px
+		.header_logo 
+			img 
+				width: 125px
+
+		.container 
+			margin-right: 46px
+			padding-right: 24px
+
+			.header_phone_link
+				font-size: 18px
+				top: 26px
+				right: 10px
+				z-index: 2
+
+		.hamburger
+			display: block
+			position: absolute
+			right: 20px
+			top: 52px
+			width: 20px
+			
+			span 
+				display: block
+				height: 2px
+				width: 100%
+				background-color: #ffffff
+				margin-bottom: 2px
+				transition: 0.5s all
+
+			&_active
+				span
+					margin-bottom: -2px
+					&:nth-child(1)
+						transform: rotate(-45deg)
+					&:nth-child(2)
+						display: none
+					&:nth-child(3)
+						transform: rotate(45deg)
+					
+		.menu 
+			position: absolute	
+			justify-content: center
+			z-index: 3
+			top: 0
+			left: -100%
+			width: 50%
+			height: 100vh
+			margin: 0
+			padding: 10px 15px
+			display: flex
+			flex-direction: column
+			background-color: rgba(0,0,0,.8)
+			transition: 0.6s all
+			&_active 
+				left: 0
+			li 
+				padding: 9px 10px 5px 10px
+				margin: 20px auto
+				a 
+					font-size: 20px
+	
+	.promo 
+		&_fone 
+			top: 0
+
+		&_text 
+			margin-top: 115px
+			font-size: 18px
+
+	.gallery 
+		&_title
+			font-size: 30px
+		.slick-slider
+			transform: translateX(-7%)
+			width: 544px
+			height: 354px
+			margin-top: 89px
+			.slick-slide
+				img
+					height: 280px
+		
+	.cost
+		height: 600px
+		padding-top: 40px
+		.row 
+			margin-top: 20px
+		&_dur, &_cost, &_ice
+			margin-top: 30px 
+			display: flex 
+			flex-direction: column
+			align-items: center
+			text-align: center
+			img 
+				width: 43px
+				margin-bottom: 15px
+		&_title 
+			&::after
+				margin: 10px auto
+
+		&_ice 
+			margin-top: 50px
+
+	footer 
+		.foot_menu
+
+			.sms, .social 
+				display: none
+			.foot_icons 
+				width: 190px
+
+				img 
+					width: 40px
+// 			// .sms, .social
+// 			// 	display: none
+@media (max-width: 576px)	
+	header 
+		.container		
+			.header_phone_link
+				top: 25px
+
+		.hamburger
+			display: block
+			position: absolute
+			right: 20px
+			top: 90px
+			width: 20px						
+
+		.menu
+			li 
+				a 
+					font-size: 15px
+	
+	.promo 
+		height: 531px
+		background: url('../img/gallery/ice_img_3.jpg') left (center / cover ) no-repeat
+		padding: 0
+		position: relative
+		top: 0
+
+		&::after
+			content: ""
+			top: 0
+			position: absolute
+			z-index: 1
+			width: 100%
+			height: 100%
+			display: block
+			background-color: #00000533
+
+		.intro 
+			display: none
+
+		&_title
+			font-size: 30px
+			top: 30px
+
+		&_subtitle
+			font-size: 18px
+			margin-top: 30px
+
+		&_text
+			font-size: 14px
+			margin-top: 22px
+
+		&_btns
+			margin-top: 77px 
+			flex-direction: column 
+			align-items: center
+
+			li 
+				width: 130px
+				margin-top: 25px
+				a 
+					font-size: 14px
+					text-align: center
+
+	.desc_1 
+		height: 867px
+		&_under_title
+			font-size: 14px
+			span 
+				font-size: 18px
+
+
+	.desc_2
+		padding-top: 35px
+
+		&_text_1
+			font-size: 16px
+
+		&_text_2
+			font-size: 16px
+
+		&_text_3
+			margin-top: 105px
+
+	.gallery 
+		position: relative
+		width: 100%
+		height: 570px
+		padding: 25px 0 25px 0
+
+		&_title
+			font-size: 25px
+
+		&_hamburger
+			display: block
+			position: absolute
+			z-index: 3
+			right: 20px
+			top: 52px
+			width: 20px
+
+		&_menu 
+			display: none
+
+		&_m_menu 
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			position: absolute
+			height: 0
+			right: 0
+			top: 94px
+			transition: 1s all
+			overflow: hidden 
+
+			a 
+				color: #ffffff
+
+			&_active 
+				display: flex
+				height: 178px
+
+		.slick-slider
+			width: 328px
+			.dots 
+				width: 77%
+				margin: 20px auto
+			.slick-slide
+				img
+					height: 280px
+
+	.cost 
+		margin-top: 15px
+		padding-top: 15px
+		
+		&_dur, &_cost
+			margin-top: 15px
+			text-align: center
+			img 
+				margin: 15px
+
+		&_dur 
+			margin-top: -3px
+		&_ice 
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			margin-top: 0
+
+			img 
+				width: 65px
+				// margin: 15px
+
+	footer 
+		.foot_menu
+			.links 
+				.point 
+					border-right: #ffffff
+					padding: 9px 7px
+
+			.foot_icons 
+				.vk, .inst, .yout
+					margin: 0
+	
+
+
