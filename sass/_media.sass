@@ -1,30 +1,32 @@
 @media (max-width: 1200px)
 	.promo 
-		height: 560px
+		height: 450px
+		padding-top: 60px
+
+		&_title 
+			width: 537px
+
+		&_subtitle 
+			margin-top: 20px
 
 		&_text 
-			margin-top: 146px
+			margin-top: 80px
 
 	.desc_1 
-		height: 633px
+		height: 618px
+
+		&_text_mid
+			margin-top: 115px
+
+		&_text_down 
+			margin-top: 80px
+
 		.link_down 
 			a 
 			 top: 88%
 		
-		&_under_title
-			font-size: 16px
-
-		&_title
-			font-size: 20px
-			text-transform: uppercase
-		&_list_1
-			font-size: 16px
 	.desc_2 
 		height: 602px
-
-		&_text_2
-			margin-top: 100px
-
 
 	.gallery
 		height: 632px
@@ -42,13 +44,17 @@
 		&_menu
 			height: 88%
 
-// 	.cost
-// 		.col-lg-4
-// 			max-width: 28%		
-					
-// 		&_hero 
-// 			&_title
-// 				font-size: 22px
+	.cost
+		&_dur, &_cost
+			font-size: 16px
+			img 
+				width: 38px
+
+		.foam 
+			&_f-rock, &_bird_text
+				font-size: 16px
+			&_bird_text
+				margin-left: 40%
 
 			
 @media (max-width: 991px)
@@ -67,48 +73,62 @@
 				font-size: 18px
 				top: 55px
 
+
 	.promo 
-		height: 498px
+		height: 409px
 		padding-top: 35px 
+		background-color: #000000
 
-		&_title
-			font-size: 40px
+		&_title 
+			margin: 0 auto
+			text-align: center
+			font-size: 40px 
 
-		&_subtitle
+		&_subtitle 
+			text-align: center
 			font-size: 20px
-			margin-top: 10px
 
 		&_text 
-			font-size: 14px
-			margin-top: 190px
+			text-align: center
+			font-size: 16px
+
+		&_btns 
+			margin-top: 25px
+
+
+	.desc_1 
+		&_text_up, &_text_mid, &_text_down
+			text-align: center
+			font-size: 16px
+
 
 	.gallery 
 		.slick-slider			
 			.slick-slide 
 				img
 					height: 410px
+
+	.cost
+		.foam 
+			&_f-rock
+				img 
+					height: 66%
+					width: auto
+			&_bird
+				img 
+					margin: 15px 0 0 0
+					height: 66%
+					width: auto
 				
+				&_text 
+					margin-left: 30%
+
 	footer 
 		.foot_menu
 			.links
 				.point
 					font-size: 12px
 
-		// .foot_icons 
-
-		// 	div 
-		// 		display: flex
-		// 		justify-content: center
-		// 		align-items: center
-		// 	img
-		// 		width: 50px	
-// 			.dots 
-// 				li 
-// 					width: 7px
-
-	.
-
-		
 
 @media (max-width: 767px)
 	header 
@@ -175,12 +195,9 @@
 					font-size: 20px
 	
 	.promo 
+		background-color: #000000
 		&_fone 
 			top: 0
-
-		&_text 
-			margin-top: 115px
-			font-size: 18px
 
 	.gallery 
 		&_title
@@ -195,25 +212,19 @@
 					height: 280px
 		
 	.cost
-		height: 600px
-		padding-top: 40px
-		.row 
-			margin-top: 20px
-		&_dur, &_cost, &_ice
-			margin-top: 30px 
-			display: flex 
+		height: 860px
+		padding-top: 40px 
+		.foam 
+			display: flex
 			flex-direction: column
-			align-items: center
-			text-align: center
-			img 
-				width: 43px
-				margin-bottom: 15px
-		&_title 
-			&::after
-				margin: 10px auto
 
-		&_ice 
-			margin-top: 50px
+			&_bird
+				display: flex
+				align-items: center
+
+				&_text 
+					margin: 0 0 0 20px
+		
 
 	footer 
 		.foot_menu
@@ -225,8 +236,8 @@
 
 				img 
 					width: 40px
-// 			// .sms, .social
-// 			// 	display: none
+
+
 @media (max-width: 576px)	
 	header 
 		.container		
@@ -247,7 +258,7 @@
 	
 	.promo 
 		height: 531px
-		background: url('../img/gallery/ice_img_3.jpg') left (center / cover ) no-repeat
+		background: url('../img/promo.jpg') center (center / cover ) no-repeat
 		padding: 0
 		position: relative
 		top: 0
@@ -260,25 +271,26 @@
 			width: 100%
 			height: 100%
 			display: block
-			background-color: #00000533
+			background-color: #00000552
 
 		.intro 
 			display: none
 
 		&_title
-			font-size: 30px
+			width: 300px
+			font-size: 24px
 			top: 30px
 
 		&_subtitle
-			font-size: 18px
-			margin-top: 30px
+			font-size: 16px
+			margin-top: 40px
 
 		&_text
 			font-size: 14px
 			margin-top: 22px
 
 		&_btns
-			margin-top: 77px 
+			margin-top: 20px 
 			flex-direction: column 
 			align-items: center
 
@@ -289,34 +301,26 @@
 					font-size: 14px
 					text-align: center
 
-	.desc_1 
-		height: 867px
-		&_under_title
+	.desc_1
+		padding-top: 55px 
+		height: 563px
+
+		&_text_up, &_text_mid, &_text_down
+			text-align: center
 			font-size: 14px
-			span 
-				font-size: 18px
 
-
+		&_text_mid,
+			margin-top: 65px
+		&_text_down
+			margin-top: 53px
 	.desc_2
 		padding-top: 35px
-
-		&_text_1
-			font-size: 16px
-
-		&_text_2
-			font-size: 16px
-
-		&_text_3
-			margin-top: 105px
 
 	.gallery 
 		position: relative
 		width: 100%
 		height: 570px
 		padding: 25px 0 25px 0
-
-		&_title
-			font-size: 25px
 
 		&_hamburger
 			display: block
@@ -360,24 +364,21 @@
 		margin-top: 15px
 		padding-top: 15px
 		
-		&_dur, &_cost
-			margin-top: 15px
-			text-align: center
-			img 
-				margin: 15px
-
-		&_dur 
-			margin-top: -3px
-		&_ice 
+		&_dur, &_cost 
 			display: flex
 			flex-direction: column
 			align-items: center
-			text-align: center
-			margin-top: 0
-
 			img 
-				width: 65px
-				// margin: 15px
+				margin: 20px 0 20px 0
+
+		.foam 
+			&_f-rock,
+				img 
+					height: 150px
+
+			&_bird 
+				&_text
+					font-size: 14px
 
 	footer 
 		.foot_menu

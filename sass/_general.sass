@@ -68,7 +68,7 @@ header
 	width: 100%
 	padding: 110px 0 60px 0
 	overflow: hidden
-	background-color: #000000
+	// background: url('../img/promo.jpg') center (center / cover) no-repeat
 
 	.intro
 		max-height: 100vh
@@ -112,18 +112,17 @@ header
 	&_text
 		position: relative
 		z-index: 2
-		margin-top: 200px
+		margin-top: 150px
 		color: #fcfcfc
 		font-size: 18px
 		font-weight: 500
 		line-height: 24px
-		letter-spacing: 1.35px
+		letter-spacing: 1px
 
 	&_btns
 		position: relative
 		z-index: 2
-		margin-top: 45px
-		margin-top: 30px
+		margin-top: 55px
 		padding: 0
 		list-style-type: none
 		display: flex
@@ -162,29 +161,18 @@ header
 		width: 100%
 		height: 100%
 		background-color: #00000060
- 
-	&_under_title
-		color: #fefefe
-		font-size: 18px
-		font-weight: 300
-		span 
-			text-transform: uppercase
-			font-size: 20px
-			font-weight: bold
-
-	&_title
-		color: #fefefe
-		font-size: 24px
-		font-weight: 600
-		margin-top: 51px
+	
+	&_text_up
 		text-align: center
+		+desc_1_text 
 
-	&_list_1
-		color: #fefefe
-		font-size: 18px
-		font-weight: 300
-		li 
-			margin-top: 10px
+	&_text_mid
+		+desc_1_text 
+		margin-top: 196px
+
+	&_text_down
+		+desc_1_text 
+		margin-top: 136px
 
 
 	.link_up,.link_down
@@ -225,29 +213,6 @@ header
 		height: 100%
 		background-color: #00000060
 
-	&_text_1 
-		color: #fefefe
-		font-size: 18px
-		font-weight: 300
-
-		span 
-			color: #fefefe
-			font-size: 24px
-			font-weight: 500
-
-	&_text_2 
-		color: #fefefe
-		font-size: 18px
-		font-weight: 300
-		margin-top: 247px
-
-
-	&_text_3
-		color: #fefefe
-		font-size: 18px
-		font-weight: 300
-		margin-top: 125px
-
 	.d2_up, .home, .down_gallery
 		a	
 			position: absolute
@@ -271,7 +236,7 @@ header
 	height: 800px
 	margin-top: 25px
 	padding-top: 50px
-	background: linear-gradient(90deg, #dd3e54, #6be585)
+	background: linear-gradient(90deg, #6be585, #dd3e54)
 
 	&_menu
 		position: absolute
@@ -353,6 +318,9 @@ header
 
 			img
 				height: 500px
+				// display: block
+				// border: 3px solid
+				// border-radius: 20px
 
 	.slick-prev, .slick-next 
 		border: none
@@ -444,10 +412,10 @@ header
 
 .cost
 	margin-top: 25px
-	height: 373px
+	height: 520px
 	padding-top: 74px
 	width: 100%
-	background-image: linear-gradient(90deg, #8360c3, #2ebf91)
+	background-image: linear-gradient(90deg,#2ebf91, #8360c3)
 
 	&_title
 		text-align: center
@@ -464,16 +432,45 @@ header
 			width: 192px
 			background-color: #f8b500
 
+	// &_dur 
+	// 	margin-left: 10%
+	// 	margin-right: 5%
+
 	.row
 		margin-top: 40px
 		margin-bottom: 40px
 		color: #f1c688
-		font-size: 14px
+		font-size: 18px
 		text-transform: uppercase
 
-		.col-xl-5,.col-xl-3, .col-xl-6
+	.foam
+		&_f-rock 
+			display: flex
+			flex-direction: column 
+			text-align: center 
+			font-size: 18px
+
 			img 
-				margin-right: 15px
+				width: 304px
+				height: 179px
+				display: block
+				margin: 0 auto
+				margin-bottom: 20px
+
+		&_bird
+			img 
+				width: 122px
+				height: 240px
+				float: left
+
+			&_text 
+				margin: 10% 0 0 auto
+				width: 74%
+				font-size: 18px
+
+	
+
+
 
 
 footer
